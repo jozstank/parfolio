@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tayza</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ============= FontAwsome ===========  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h2><a href="#home">FOLIO</a></h2>
+        <div class="menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="open"
+            id="open"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="close off"
+            id="close"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+
+          <ul>
+            <li><a href="#home" id="homeBtn">Home</a></li>
+            <li><a href="#about" id="aboutBtn">About</a></li>
+            <li><a href="#skill" id="skillBtn">Skill</a></li>
+            <li><a href="#project" id="projectBtn">Projects</a></li>
+            <li><a href="#contact" id="contactBtn">Contact</a></li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="sun"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="moon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+              />
+            </svg>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="home" id="home">
+        <div class="intro_img">
+          <div class="intro">
+            <span class="hello">Hello</span>
+            <h1 class="homeTitle hey">I'm <span id="element"></span></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit autem, voluptatibus, dolor itaque odit dignissimos
+              exercitationem obcaecati vel vero non tempora assumenda earum ea
+              magnam inventore sapiente quaerat ratione doloremque!
+            </p>
+            <div class="abtns">
+              <button>
+                <a
+                  href="./downloadfile/chit thou kha hlaing_cv.pdf"
+                  download=""
+                  class="cv"
+                  >Download CV</a
+                >
+              </button>
+              <button><a href="#contact" class="cv">Contact Me</a></button>
+            </div>
+
+            <div class="social">
+              <div class="socialandbtn">
+                <a
+                  href="https://www.facebook.com/tayzahtaine672"
+                  target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+                <a href="https://t.me/TayzaHtaine" target="_blank"
+                  ><i class="fab fa-telegram"></i
+                ></a>
+                <a href="https://github.com/jozstank" target="_blank"
+                  ><i class="fab fa-github-square"></i
+                ></a>
+              </div>
+
+              <div class="scroll-down-btn">
+                <a href="#about" class="outer"><span class="inner"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <img src="img/profile.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="aboutTitle hey">About Me</h2>
+
+        <div class="about_picntxt">
+          <div class="aboutPic">
+            <img src="./img/profile2.png" alt="" />
+          </div>
+          <div class="aboutTxt">
+            <h1>About Me</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              recusandae quas voluptates doloremque sint reiciendis soluta sequi
+              quam, accusamus laboriosam delectus beatae atque natus
+              consequuntur rem aperiam provident fugit quidem!Lorem Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. In, assumenda earum
+              maiores minima tenetur ab, pariatur ipsa repellendus consequuntur
+              optio et sint? Non ex ipsum minus architecto dolorum perspiciatis
+              repellat!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill" id="skill">
+        <h2 class="skillTitle hey">Skills</h2>
+        <div class="skill-container">
+          <div class="frontend">
+            <div class="frontendtitle">
+              <i class="fas fa-code"></i>
+              <h4>Frontend</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <li>
+                <h4>HTML</h4>
+                <span class="bar"><span class="html"></span></span>
+              </li>
+              <li>
+                <h4>CSS</h4>
+                <span class="bar"><span class="css"></span></span>
+              </li>
+              <li>
+                <h4>JS</h4>
+                <span class="bar"><span class="js"></span></span>
+              </li>
+              <li>
+                <h4>React</h4>
+                <span class="bar"><span class="react"></span></span>
+              </li>
+              <li>
+                <h4>JQuery</h4>
+                <span class="bar"><span class="jquery"></span></span>
+              </li>
+              <li>
+                <h4>Bootstrap</h4>
+                <span class="bar"><span class="bootstrap"></span></span>
+              </li>
+              <li>
+                <h4>Tailwind</h4>
+                <span class="bar"><span class="tailwind"></span></span>
+              </li>
+            </div>
+          </div>
+
+          <div class="backend">
+            <div class="backendtitle">
+              <i class="fas fa-shield-alt"></i>
+              <h4>Backend</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <li>
+                <h4>NodeJS</h4>
+                <span class="bar"><span class="nodejs"></span></span>
+              </li>
+              <li>
+                <h4>Express</h4>
+                <span class="bar"><span class="express"></span></span>
+              </li>
+              <li>
+                <h4>Python</h4>
+                <span class="bar"><span class="python"></span></span>
+              </li>
+              <li>
+                <h4>Django</h4>
+                <span class="bar"><span class="django"></span></span>
+              </li>
+              <li>
+                <h4>PHP</h4>
+                <span class="bar"><span class="php"></span></span>
+              </li>
+              <li>
+                <h4>Laravel</h4>
+                <span class="bar"><span class="laravel"></span></span>
+              </li>
+            </div>
+          </div>
+
+          <div class="learned">
+            <div class="learnedtitle">
+              <i class="fas fa-sitemap"></i>
+              <h4>I've Learned</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <li class="learnedfact">
+                <h4>Figma</h4>
+                <img src="./img/icon/figma-svgrepo-com.svg" alt="" />
+              </li>
+              <li class="learnedfact">
+                <h4>TypeScript</h4>
+                <img
+                  src="./img/icon/typescript-official-svgrepo-com.svg"
+                  alt=""
+                />
+              </li>
+              <li class="learnedfact">
+                <h4>Git</h4>
+                <img src="./img/icon/git-svgrepo-com.svg" alt="" />
+              </li>
+              <li class="learnedfact">
+                <h4>GitHub</h4>
+                <img src="./img/icon/github-142-svgrepo-com.svg" alt="" />
+              </li>
+              <li class="learnedfact">
+                <h4>MySQL</h4>
+                <img src="./img/icon/mysql-logo-svgrepo-com.svg" alt="" />
+              </li>
+              <li class="learnedfact">
+                <h4>MongoDB</h4>
+                <img src="./img/icon/mongodb-svgrepo-com.svg" alt="" />
+              </li>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="project">
+        <h2 class="projectTitle hey">Projects</h2>
+        <div class="project-container">
+          <div class="project-item">
+            <img src="./img/2493271.jpg" alt="" />
+            <h4>Ecommerce</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
+          </div>
+
+          <div class="project-item">
+            <img src="./img/634.jpg" alt="" />
+            <h4>Calculator</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
+          </div>
+
+          <div class="project-item">
+            <img src="./img/6447003.jpg" alt="" />
+            <h4>Twitter Clone</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
+          </div>
+
+          <div class="project-item">
+            <img src="./img/4530199.jpg" alt="" />
+            <h4>Shopping app</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="contactTitle hey">Contact Me</h2>
+
+        <div class="formandadress">
+          <form action="https://formspree.io/f/xzbqkddo" method="POST">
+            <h3>GET IN TOUCH</h3>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Phone no."
+              autocomplete="off"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="How can I help you?"
+            ></textarea>
+            <button type="submit" id="btn">Send</button>
+          </form>
+
+          <div class="adress">
+            <div class="aditem">
+              <i class="fas fa-phone-alt"></i>
+              <div class="ha">
+                <h5>Phone</h5>
+                <a href="tel:+959977341498" target="_blank">+959977341498</a>
+              </div>
+            </div>
+
+            <div class="aditem">
+              <i class="fas fa-envelope"></i>
+              <div class="ha">
+                <h5>Email</h5>
+                <a href="mailto: chitthoukha672@gmail.com" target="_blank"
+                  >chitthoukha672@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="aditem">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="ha">
+                <h5>Map</h5>
+                <a href="https://goo.gl/maps/fJQUEb3fWmFaXyWq8" target="_blank"
+                  >Yangon</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ============= Type Text============== -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!-- ============= Scroll Out============== -->
+    <script src="./libs/scroll-out.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
