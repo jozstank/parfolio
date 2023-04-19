@@ -393,6 +393,7 @@ nav svg.close {
 .about {
   width: 100%;
   padding: 4vw;
+  overflow-x: hidden;
 }
 
 .about h2 {
@@ -405,7 +406,7 @@ nav svg.close {
 .about h2::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 150px;
   height: 5px;
   top: 50%;
   left: 110%;
@@ -415,10 +416,10 @@ nav svg.close {
 .about h2::before {
   position: absolute;
   content: "";
-  width: 30px;
+  width: 150px;
   height: 5px;
   top: 50%;
-  left: -30%;
+  right: 110%;
   border-radius: 5px;
   background-color: var(--color_a);
 }
@@ -532,6 +533,7 @@ nav svg.close {
 .skill {
   width: 100%;
   padding: 4vw;
+  overflow-x: hidden;
 }
 
 .skill h2 {
@@ -544,7 +546,7 @@ nav svg.close {
 .skill h2::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 150px;
   height: 5px;
   top: 50%;
   left: 110%;
@@ -554,10 +556,10 @@ nav svg.close {
 .skill h2::before {
   position: absolute;
   content: "";
-  width: 30px;
+  width: 150px;
   height: 5px;
   top: 50%;
-  left: -55%;
+  right: 110%;
   border-radius: 5px;
   background-color: var(--color_a);
 }
@@ -794,6 +796,7 @@ nav svg.close {
 .project {
   width: 100%;
   padding: 4vw 2vw;
+  overflow-x: hidden;
 }
 
 .project h2 {
@@ -806,7 +809,7 @@ nav svg.close {
 .project h2::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 150px;
   height: 5px;
   top: 50%;
   left: 110%;
@@ -816,10 +819,10 @@ nav svg.close {
 .project h2::before {
   position: absolute;
   content: "";
-  width: 30px;
+  width: 150px;
   height: 5px;
   top: 50%;
-  left: -35%;
+  right: 110%;
   border-radius: 5px;
   background-color: var(--color_a);
 }
@@ -889,6 +892,7 @@ nav svg.close {
 .cont {
   width: 100%;
   padding: 4vw;
+  overflow-x: hidden;
 }
 
 .cont h2 {
@@ -901,7 +905,7 @@ nav svg.close {
 .cont h2::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 150px;
   height: 5px;
   top: 50%;
   left: 110%;
@@ -911,10 +915,10 @@ nav svg.close {
 .cont h2::before {
   position: absolute;
   content: "";
-  width: 30px;
+  width: 150px;
   height: 5px;
   top: 50%;
-  left: -25%;
+  right: 110%;
   border-radius: 5px;
   background-color: var(--color_a);
 }
