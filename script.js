@@ -14,13 +14,22 @@ const about = document.querySelector("#about");
 const skill = document.querySelector("#skill");
 const project = document.querySelector("#project");
 const contact = document.querySelector("#contact");
-
 const root = document.querySelector(":root");
 
 ScrollOut({
   targets:
     ".img,.homeTitle,.aboutTitle,.skillTitle,.projectTitle,.contactTitle",
 });
+
+// ============ hori scroll in skill section ===========
+document.querySelector("#nex").onclick = () => {
+  const widthitem = document.querySelector(".items").offsetWidth;
+  document.querySelector(".skill .horiscroll").scrollLeft += widthitem;
+};
+document.querySelector("#prev").onclick = () => {
+  const widthitem = document.querySelector(".items").offsetWidth;
+  document.querySelector(".skill .horiscroll").scrollLeft -= widthitem;
+};
 
 // =========== Helight on nav menu =========
 window.addEventListener("scroll", () => {

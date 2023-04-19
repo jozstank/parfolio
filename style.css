@@ -38,12 +38,13 @@ body {
   border-bottom: 0.5px solid var(--color_b);
   position: relative;
   position: sticky;
-  top: -2%;
+  top: -2px;
   backdrop-filter: invert(20%);
   z-index: 200;
 }
 .container nav h2 {
-  font-size: min(6vw, 30px);
+  font-size: 30px;
+
   letter-spacing: 3px;
   font-weight: bold;
   color: var(--color_b);
@@ -54,7 +55,7 @@ body {
   content: "F";
   left: 2.4%;
   top: 7%;
-  font-size: min(5.3vw, 25px);
+  font-size: 25px;
   color: var(--color_a);
 }
 .container nav h2 a {
@@ -87,7 +88,7 @@ body {
 
 .container nav .menu ul li a {
   text-decoration: none;
-  font-size: min(4vw, 16px);
+  font-size: 16px;
   position: relative;
   padding: 5px;
   color: var(--color_b);
@@ -117,7 +118,7 @@ body {
   stroke: var(--color_a);
 }
 .container nav svg {
-  width: min(6vw, 30px);
+  width: 20px;
   cursor: pointer;
 }
 .container nav svg.open,
@@ -144,7 +145,7 @@ nav svg.close {
   }
   .container nav .menu ul.active {
     display: block;
-    width: 30%;
+    width: 55%;
     height: fit-content;
     position: absolute;
     top: 105%;
@@ -176,8 +177,8 @@ nav svg.close {
 .home {
   width: 100%;
   padding: 4vw 5vw;
-  overflow-x: hidden;
 }
+
 .home .intro_img {
   width: 100%;
   display: flex;
@@ -187,7 +188,7 @@ nav svg.close {
   width: 50%;
 }
 .home .intro_img .intro span.hello {
-  font-size: min(4vw, 24px);
+  font-size: 24px;
   position: relative;
 }
 .home .intro_img .intro span.hello::after {
@@ -201,18 +202,31 @@ nav svg.close {
 }
 .home .intro_img .intro h1 {
   height: 100px;
-  font-size: min(6vw, 40px);
+  font-size: 40px;
   color: var(--color_b);
   margin: 1vw 0;
 }
-@media (max-width: 450px) {
-  .home .intro_img .intro h1 {
-    height: 59px;
+@media (max-width: 360px) {
+  .home {
+    padding: 4vw 1vw;
   }
 }
-@media (max-width: 290px) {
+@media (max-width: 320px) {
+  .home .intro_img .intro span.hello {
+    font-size: 20px;
+  }
   .home .intro_img .intro h1 {
-    height: 35px;
+    font-size: 30px;
+    height: 80px;
+  }
+}
+@media (max-width: 240px) {
+  .home .intro_img .intro span.hello {
+    font-size: 15px;
+  }
+  .home .intro_img .intro h1 {
+    font-size: 20px;
+    height: 50px;
   }
 }
 .home .intro_img .intro h1 span {
@@ -222,17 +236,25 @@ nav svg.close {
 .home .intro_img .intro p {
   color: var(--color_b);
   max-width: 400px;
-  font-size: min(3vw, 18px);
-  margin-bottom: 2vw;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+@media (max-width: 240px) {
+  .home .intro_img .intro p {
+    font-size: 16px;
+  }
 }
 .home .intro_img .intro .abtns {
   display: flex;
+  flex-wrap: wrap;
   gap: 2vw;
 }
 .home .intro_img .intro button {
   background-color: var(--btn);
-  padding: min(2vw, 5px) min(2.5vw, 10px);
-  margin-bottom: 0.5vw;
+  padding: 5px 10px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,10 +266,15 @@ nav svg.close {
 .home .intro_img .intro button a.cv {
   text-decoration: none;
   color: var(--color_b);
-  font-size: min(3vw, 20px);
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
   transition: all 0.5s;
+}
+@media (max-width: 330px) {
+  .home .intro_img .intro button a.cv {
+    font-size: 15px;
+  }
 }
 .home .intro_img .intro button:hover a.cv {
   color: var(--color_a);
@@ -264,21 +291,25 @@ nav svg.close {
   position: relative;
 }
 .home .intro_img .intro .social .socialandbtn {
-  margin-top: 2vw;
-  width: min(20vw, 150px);
+  margin-top: 15px;
+  width: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2vw;
 }
 .home .intro_img .intro .social .socialandbtn a {
-  font-size: min(5vw, 30px);
+  font-size: 40px;
   transition: all 0.3s;
   color: var(--color_b);
 }
-
+@media (max-width: 410px) {
+  .home .intro_img .intro .social .socialandbtn a {
+    font-size: 30px;
+  }
+}
 .home .intro_img .intro .social .socialandbtn a:hover {
-  transform: translateY(-10%);
+  transform: translateY(-20%);
 }
 .home .intro_img .img {
   width: 50%;
@@ -286,7 +317,7 @@ nav svg.close {
 .home .intro_img .img img {
   width: 100%;
   object-fit: cover;
-  transform: translateX(150%);
+  transform: translateX(-150%);
   opacity: 0;
   transition: all 1s ease-out;
 }
@@ -298,11 +329,11 @@ nav svg.close {
     gap: 5vw;
   }
   .home .intro_img .intro {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .home .intro_img .img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -315,20 +346,21 @@ nav svg.close {
 }
 .home .scroll-down-btn .outer {
   display: inline-block;
-  width: 3vw;
-  height: 5.5vw;
+  width: 30px;
+  height: 60px;
   border-radius: 20px;
+  padding-top: 4px;
   display: flex;
   justify-content: center;
   cursor: pointer;
   border: 2px solid var(--color_a);
   position: absolute;
-  right: 0;
+  right: 10px;
 }
 .home .scroll-down-btn .inner {
   display: inline-block;
-  width: 2vw;
-  height: 2vw;
+  width: 10px;
+  height: 10px;
   margin-top: 10%;
   border-radius: 50%;
   background: var(--color_b);
@@ -337,7 +369,18 @@ nav svg.close {
 @keyframes mouse {
   100% {
     opacity: 0;
-    transform: translateY(3vw);
+    transform: translateY(30px);
+  }
+}
+@media (max-width: 400px) {
+  .home .scroll-down-btn .outer {
+    width: 20px;
+    height: 40px;
+  }
+}
+@media (max-width: 300px) {
+  .home .scroll-down-btn {
+    display: none;
   }
 }
 /* ============== Scroll in =========== */
@@ -353,23 +396,40 @@ nav svg.close {
 }
 
 .about h2 {
-  font-size: min(4vw, 24px);
+  display: inline-block;
+  font-size: 24px;
   color: var(--color_b);
   position: relative;
-  margin-bottom: 2vw;
+  margin-bottom: 15px;
 }
 .about h2::after {
   position: absolute;
   content: "";
-  width: 80%;
-  height: 10%;
+  width: 100%;
+  height: 5px;
   top: 50%;
-  left: min(20vw, 170px);
+  left: 110%;
+  border-radius: 5px;
   background-color: var(--color_a);
+}
+.about h2::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 5px;
+  top: 50%;
+  left: -30%;
+  border-radius: 5px;
+  background-color: var(--color_a);
+}
+@media (max-width: 230px) {
+  .about h2 {
+    font-size: 20px;
+  }
 }
 
 .about .about_picntxt {
-  margin: 10vw 0;
+  margin: 18px 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -379,13 +439,9 @@ nav svg.close {
 
 .about .about_picntxt .aboutPic {
   width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: red; */
 }
 .about .aboutPic img {
-  width: 50%;
+  width: 90%;
   object-fit: cover;
 }
 .about .about_picntxt .aboutTxt {
@@ -405,14 +461,31 @@ nav svg.close {
 .about .about_picntxt .aboutTxt h1 {
   color: var(--color_a);
   writing-mode: vertical-lr;
-  font-size: min(4vw, 29px);
+  font-size: 24px;
   transform: rotate(180deg);
 }
+.aboutTxt input,
+.aboutTxt label {
+  display: none;
+}
+.aboutTxt label {
+  color: var(--card);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.aboutTxt .seemore {
+  display: flex;
+  flex-direction: column;
+}
 .about .about_picntxt p {
-  max-width: 450px;
   text-align: left;
-  font-size: min(3vw, 20px);
+  font-size: 20px;
   color: var(--color_b);
+}
+@media (max-width: 240px) {
+  .about .about_picntxt p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 800px) {
   .about .about_picntxt .aboutTxt {
@@ -426,53 +499,115 @@ nav svg.close {
     padding: 5vw;
   }
 }
+@media (max-width: 430px) {
+  .about .about_picntxt p {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .aboutTxt label {
+    display: block;
+  }
+  .aboutTxt label::before {
+    content: "See more..";
+  }
 
-/* ============== Scroll in =========== */
-.about h2.aboutTitle[data-scroll="in"] .aboutTitle {
-  color: red;
+  .aboutTxt #seemorToggle:checked ~ p {
+    display: block;
+  }
+  .aboutTxt #seemorToggle:checked ~ label::before {
+    content: "See less..";
+  }
 }
-
+@media (max-width: 290px) {
+  .about .about_picntxt p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
 /* ============= Skill =========== */
 .skill {
   width: 100%;
-  height: fit-content;
   padding: 4vw;
 }
-.skill > h2 {
-  font-size: min(4vw, 24px);
+
+.skill h2 {
+  display: inline-block;
+  font-size: 24px;
   color: var(--color_b);
   position: relative;
-  margin-bottom: 2vw;
+  margin-bottom: 15px;
 }
-.skill > h2::after {
+.skill h2::after {
   position: absolute;
   content: "";
-  width: 80%;
-  height: 10%;
+  width: 100%;
+  height: 5px;
   top: 50%;
-  left: min(20vw, 170px);
+  left: 110%;
+  border-radius: 5px;
   background-color: var(--color_a);
 }
+.skill h2::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 5px;
+  top: 50%;
+  left: -55%;
+  border-radius: 5px;
+  background-color: var(--color_a);
+}
+@media (max-width: 230px) {
+  .skill h2 {
+    font-size: 20px;
+  }
+}
+.skill .horiscroll {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
+.skill .leftrightbtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
 
+.skill .leftrightbtns > svg {
+  display: none;
+  width: 35px;
+  padding: 5px;
+  background-color: var(--btn);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.skill .horiscroll::-webkit-scrollbar {
+  display: none;
+}
 .skill .skill-container {
-  width: 80%;
+  width: 1000px;
   margin: 0 auto;
   height: fit-content;
   display: flex;
-  justify-content: space-between;
+  gap: 3px;
   align-items: center;
-}
-.skill .skill-container i {
-  font-size: min(2.5vw, 20px);
-  cursor: pointer;
 }
 
 .skill .skill-container .frontend,
 .skill .skill-container .backend,
 .skill .skill-container .learned {
-  width: 30%;
+  width: 330px;
   border-radius: 10px;
   transition: all 0.3s;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   backdrop-filter: blur(11px) saturate(153%);
   -webkit-backdrop-filter: blur(11px) saturate(153%);
@@ -480,6 +615,12 @@ nav svg.close {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
+@media (max-width: 1088px) {
+  .skill .leftrightbtns > svg {
+    display: block;
+  }
+}
+
 .skill .skill-container .frontend:hover,
 .skill .skill-container .backend:hover,
 .skill .skill-container .learned:hover {
@@ -498,14 +639,18 @@ nav svg.close {
   padding: 5% 0;
   border-bottom: 0.5vw solid skyblue;
 }
-
-.skill .skill-container .frontend h4,
-.skill .skill-container .backend h4,
-.skill .skill-container .learned h4 {
-  font-size: min(2vw, 20px);
-  box-shadow: 0 15px 20px -10px #000;
+.skill .skill-container .frontend .frontendtitle i,
+.skill .skill-container .backend .backendtitle i,
+.skill .skill-container .learned .learnedtitle i {
+  font-size: 24px;
 }
 
+.skill .skill-container .frontend .frontendtitle > h4,
+.skill .skill-container .backend .backendtitle > h4,
+.skill .skill-container .learned .learnedtitle > h4 {
+  font-size: 24px;
+  box-shadow: 0 15px 20px -10px #000;
+}
 .skill .skill-container .frontend .frontendtitle svg,
 .skill .skill-container .backend .backendtitle svg,
 .skill .skill-container .learned .learnedtitle svg {
@@ -514,22 +659,45 @@ nav svg.close {
 .content {
   width: 90%;
   margin: 0 auto;
-  padding: 1vw 0;
+  padding: 10px 5px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 360px) {
+  .skill .skill-container .items {
+    width: 250px;
+  }
+  .contact {
+    max-width: 50%;
+    gap: 2px;
+  }
+}
+@media (max-width: 270px) {
+  .skill .skill-container .items {
+    width: 200px;
+  }
+  .skill .skill-container .frontend .frontendtitle > h4,
+  .skill .skill-container .backend .backendtitle > h4,
+  .skill .skill-container .learned .learnedtitle > h4 {
+    font-size: 20px;
+  }
+  .content li > h4 {
+    font-size: 15px;
+  }
 }
 .content li {
   list-style: none;
-  margin: 0.3vw;
 }
 .content li > h4 {
-  font-size: min(2vw, 30px);
+  font-size: 20px;
   font-weight: normal;
+  box-shadow: 0 15px 20px -10px #000;
 }
 .content li .bar {
   display: inline-block;
   width: 100%;
-  height: 0.7vw;
+  height: 8px;
   border-radius: 10px;
   background-color: var(--card);
   display: flex;
@@ -625,39 +793,57 @@ nav svg.close {
 /* ============= Projects =========== */
 .project {
   width: 100%;
-  padding: 4vw;
+  padding: 4vw 2vw;
 }
-.project > h2 {
-  font-size: min(4vw, 24px);
+
+.project h2 {
+  display: inline-block;
+  font-size: 24px;
   color: var(--color_b);
   position: relative;
-  margin-bottom: 2vw;
+  margin-bottom: 15px;
 }
-.project > h2::after {
+.project h2::after {
   position: absolute;
   content: "";
-  width: 80%;
-  height: 10%;
+  width: 100%;
+  height: 5px;
   top: 50%;
-  left: min(20vw, 170px);
+  left: 110%;
+  border-radius: 5px;
   background-color: var(--color_a);
 }
+.project h2::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 5px;
+  top: 50%;
+  left: -35%;
+  border-radius: 5px;
+  background-color: var(--color_a);
+}
+@media (max-width: 230px) {
+  .skill h2 {
+    font-size: 20px;
+  }
+}
 .project-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   align-content: center;
-  gap: 2vw;
+  justify-content: center;
+  gap: 10px;
 }
 .project-item {
-  width: 20%;
+  width: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 1vw;
+  padding: 10px;
   cursor: pointer;
 
   backdrop-filter: blur(11px) saturate(153%);
@@ -679,13 +865,13 @@ nav svg.close {
 }
 
 .project-item h4 {
-  font-size: 1.6vw;
+  font-size: 20px;
   color: var(--color_b);
   user-select: none;
   margin-bottom: 0.5vw;
 }
 .project-item p {
-  font-size: 1.2vw;
+  font-size: 18px;
   margin-bottom: 0.5vw;
   user-select: none;
 
@@ -696,111 +882,132 @@ nav svg.close {
 }
 @media (max-width: 700px) {
   .project-item {
-    width: 40%;
+    width: 80%%;
   }
 }
 /* ============= Contact =========== */
-.contact {
+.cont {
   width: 100%;
   padding: 4vw;
 }
-.contact > h2 {
-  font-size: min(4vw, 24px);
+
+.cont h2 {
+  display: inline-block;
+  font-size: 24px;
   color: var(--color_b);
   position: relative;
-  margin-bottom: 2vw;
+  margin-bottom: 15px;
 }
-.contact > h2::after {
+.cont h2::after {
   position: absolute;
   content: "";
-  width: 80%;
-  height: 10%;
+  width: 100%;
+  height: 5px;
   top: 50%;
-  left: min(20vw, 170px);
+  left: 110%;
+  border-radius: 5px;
   background-color: var(--color_a);
 }
-
+.cont h2::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 5px;
+  top: 50%;
+  left: -25%;
+  border-radius: 5px;
+  background-color: var(--color_a);
+}
+@media (max-width: 230px) {
+  .cont h2 {
+    font-size: 20px;
+  }
+}
+.formandadress {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
 form {
   width: 40%;
   height: fit-content;
   background-color: #fff;
-  max-width: 600px;
-  padding: 1vw;
+  padding: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 form h3 {
-  font-size: 3vw;
+  font-size: 18px;
   font-weight: 800;
-  margin-bottom: min(1vw, 15px);
+  margin-bottom: 15px;
   color: var(--background);
 }
+
 form input,
 form textarea {
-  width: 90%;
+  width: 100%;
   background-color: #dbd8d8;
   border: none;
   outline: none;
-  margin: 0.7vw 0;
-  font-size: 2vw;
+  margin: 5px 0;
+  font-size: 20px;
   font-weight: 500;
-  padding: 0.5vw;
+  padding: 5px;
   color: #000;
   border-radius: 5px;
 }
 form input:focus,
 form textarea:focus {
-  outline: 0.25vw solid var(--background);
+  outline: 2px solid var(--background);
 }
 form button {
   background-color: var(--btn);
   color: #fff;
-  font-size: 1.5vw;
+  font-size: 20px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 1vw 2vw;
+  padding: 10px 15px;
+  margin-top: 5px;
   border-radius: 20px;
 }
-.formandadress {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
+
 .adress {
   width: 40%;
   height: fit-content;
-  padding: 3vw;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 3vw;
+  gap: 10px;
+}
+@media (max-width: 700px) {
+  form {
+    width: 90%;
+  }
+  .adress {
+    width: 90%;
+    background-color: rgb(30, 30, 80);
+  }
 }
 .aditem {
   display: flex;
   align-items: center;
-  gap: 1vw;
+  gap: 10px;
 }
 .aditem .fas {
-  font-size: 2.5vw;
+  font-size: 20px;
 }
 .aditem .ha {
   display: flex;
   flex-direction: column;
 }
 .aditem h5 {
-  font-size: 2vw;
+  font-size: 19px;
 }
 .aditem a {
-  font-size: 1.5vw;
+  font-size: 15px;
 }
-/* @media (max-width: 810px) {
-  form {
-    width: 80%;
-  }
-  .adress {
-    width: 80%;
-  }
-} */
