@@ -592,7 +592,8 @@ nav svg.close {
   display: none;
 }
 .skill .skill-container {
-  width: 1000px;
+  /* width: 1000px; */
+  width: fit-content;
   margin: 0 auto;
   height: fit-content;
   display: flex;
